@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  min-width: 100%;
+  background-color: #1e293b;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#file-uploader {
+  background-image: url('./assets/image.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+}
+
+.slide {
+  animation: 1s infinite alternate ease-in-out slide
+}
+
+@keyframes slide {
+  from{
+    left: calc(100% - 25%);
+  }
+
+  to {
+    left: 0%;
+  }
+}
