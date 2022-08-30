@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://image-uploader-vert-rho.vercel.app/">
       Demo
     </a>
     <span> | </span>
@@ -39,17 +39,12 @@
 
 <img src="./public/images/desktop-preview.png" style="width: 100%;"/>
 <br />
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
 
 This project is a solution to the Image Uploader challenge from devChallenges.io.
 You can upload any image as long its type is jpge, png or svg. Images are uploaded to Cloudinary.
 Overall I would say that this project was Ok, I didn't fell that my skills where challenged most of the time, although I did need to learn
 about Drag & Drop events and how to handle them.
+
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
@@ -63,6 +58,12 @@ about Drag & Drop events and how to handle them.
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx) was to build an application to complete the given user stories.
+
+* User story: I can drag and drop an image to upload it
+* User story: I can choose to select an image from my folder
+* User story: I can see a loader when uploading
+* User story: When the image is uploaded, I can see the image and copy it
+* User story: I can choose to copy to the clipboard
 
 ## How To Use
 
