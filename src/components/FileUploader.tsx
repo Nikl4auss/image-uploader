@@ -1,7 +1,10 @@
 import { DragEvent, useEffect, useState } from "react"
 import { imageValidator } from "../utils/imageValidator"
 
-function FileUploader({ upload, handleError }) {
+function FileUploader({ upload, handleError }: {
+  upload: any,
+  handleError: any,
+}) {
   const [file, setFile] = useState<any>({})
   function dragEnterHandler(event: DragEvent) {
     event.currentTarget.classList.add('border-cyan-500', 'bg-slate-600')
@@ -64,6 +67,7 @@ function FileUploader({ upload, handleError }) {
         type="file"
         className='invisible'
         onChange={(event) => {
+          //@ts-ignore
           const [file] = event.currentTarget.files
           if (file) {
             if (!imageValidator(file)) {

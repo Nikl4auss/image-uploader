@@ -1,4 +1,4 @@
-import { ChangeEvent, ChangeEventHandler, useState } from 'react'
+import { useState } from 'react'
 import FileUploader from './components/FileUploader'
 import axios from 'axios'
 import Box from './components/Box'
@@ -32,7 +32,7 @@ function App() {
     }
   }
 
-  function handleError(error) {
+  function handleError(error: any) {
     console.log('here')
     setError(error)
     setTimeout(() => {
@@ -54,7 +54,7 @@ function App() {
             ? <Success url={url} />
             : uploading
               ? <Uploader />
-              : <FileUploader upload={uploadImage} handleError={(error) => handleError(error)} />
+              : <FileUploader upload={uploadImage} handleError={(error: any) => handleError(error)} />
         }
       </Box>
 
